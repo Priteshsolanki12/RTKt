@@ -10,7 +10,7 @@ const TodoSlice = createSlice({
 
             },
             removeTodo:(state,action)=>{
-                state.filter((todo)=>todo.id !== action.payLoad)
+              return state.filter((todo)=>todo.id !== action.payLoad)
             }
     }
 })
